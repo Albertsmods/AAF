@@ -1,10 +1,10 @@
-package com.example.examplemod;
+package com.albertsmods.aaf;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import net.minecraftforge.fml.common.Mod;
 
-@Mod(Constants.MOD_ID)
+
+@Mod(AAFConstants.MOD_ID)
 public class ExampleMod {
     
     public ExampleMod() {
@@ -14,8 +14,8 @@ public class ExampleMod {
         // project.
     
         // Use Forge to bootstrap the Common mod.
-        Constants.LOG.info("Hello Forge world!");
-        CommonClass.init();
+        AAFConstants.LOG.info("Hello Forge world!");
+        AAFCommon.init();
     
         // Some code like events require special initialization from the
         // loader specific code.
@@ -28,6 +28,6 @@ public class ExampleMod {
     // the Common listener.
     private void onItemTooltip(ItemTooltipEvent event) {
         
-        CommonClass.onItemTooltip(event.getItemStack(), event.getFlags(), event.getToolTip());
+        AAFCommon.onItemTooltip(event.getItemStack(), event.getFlags(), event.getToolTip());
     }
 }

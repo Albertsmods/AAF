@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.albertsmods.aaf;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
@@ -13,11 +13,11 @@ public class ExampleMod implements ModInitializer {
         // project.
 
         // Use Fabric to bootstrap the Common mod.
-        Constants.LOG.info("Hello Fabric world!");
-        CommonClass.init();
+        AAFConstants.LOG.info("Hello Fabric world!");
+        AAFCommon.init();
         
         // Some code like events require special initialization from the
         // loader specific code.
-        ItemTooltipCallback.EVENT.register(CommonClass::onItemTooltip);
+        ItemTooltipCallback.EVENT.register(AAFCommon::onItemTooltip);
     }
 }

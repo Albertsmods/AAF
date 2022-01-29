@@ -1,6 +1,6 @@
-package com.example.examplemod.mixin;
+package com.albertsmods.aaf.mixin;
 
-import com.example.examplemod.Constants;
+import com.albertsmods.aaf.AAFConstants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
@@ -14,8 +14,8 @@ public class ExampleMixin {
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
         
-        Constants.LOG.info("This line is printed by an example mod mixin from Fabric!");
-        Constants.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
-        Constants.LOG.info("Classloader: {}", this.getClass().getClassLoader());
+        AAFConstants.LOG.info("This line is printed by an example mod mixin from Fabric!");
+        AAFConstants.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
+        AAFConstants.LOG.info("Classloader: {}", this.getClass().getClassLoader());
     }
 }
