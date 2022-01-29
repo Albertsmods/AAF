@@ -6,7 +6,7 @@
     "mixins": [
     ],
     "client": [
-      "ExampleMixin"
+      "com.albertsmods.aaf.mixin.ExampleMixin"
     ],
     "injectors": {
       "defaultRequire": 1
