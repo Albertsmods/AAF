@@ -1,5 +1,6 @@
 package com.albertsmods.aaf;
 
+import com.albertsmods.aaf.features.trees.AAFTrees;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
