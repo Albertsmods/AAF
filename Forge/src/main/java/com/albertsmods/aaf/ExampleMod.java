@@ -2,6 +2,7 @@ package com.albertsmods.aaf;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
+import net.minecraftforge.fml.common.Mod;
 
 
 @Mod(AAFConstants.MOD_ID)
